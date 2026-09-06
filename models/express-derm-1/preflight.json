@@ -1,0 +1,15 @@
+{
+  "groups": 2425,
+  "image_hash_splits": null,
+  "image_hashes_verified": true,
+  "manifest_sha256": "ec1de81526be5254e11c7e292eb6ae65ad8ce4c5d65174a14dee1aa3673d074f",
+  "near_duplicate_pairs": 1,
+  "records": 33110,
+  "schema_version": 1,
+  "split_counts": {
+    "test": 6538,
+    "train": 20040,
+    "validation": 6532
+  },
+  "verified_images": 33110
+}

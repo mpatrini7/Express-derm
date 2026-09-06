@@ -1,0 +1,29 @@
+NAME         MODEL                                  SERIAL                 SIZE TYPE FSTYPE   MOUNTPOINTS                  TRAN
+loop0                                                                        4K loop squashfs /snap/bare/5                 
+loop1                                                                     61.9M loop squashfs /snap/core24/1644            
+loop2                                                                    245.1M loop squashfs /snap/firefox/8753           
+loop3                                                                    552.9M loop squashfs /snap/gnome-46-2404/154      
+loop4                                                                    188.2M loop squashfs /snap/mesa-2404/1836         
+loop5                                                                     91.7M loop squashfs /snap/gtk-common-themes/1535 
+loop6                                                                     43.4M loop squashfs /snap/snapd/27709            
+loop7                                                                    213.9M loop squashfs /snap/thunderbird/1229       
+loop8                                                                    214.7M loop squashfs /snap/thunderbird/1241       
+loop9                                                                       16M loop vfat                                  
+mmcblk0                                             [redacted]           238.3G disk                                       mmc
+└─mmcblk0p1                                                              238.3G part ext4     /mnt/express-uhs             mmc
+nvme0n1      ST51271_WDC SanDisk SD Express SDSQXFN [redacted]           456.1G disk                                       nvme
+├─nvme0n1p1                                                              454.6G part ext4     /                            nvme
+├─nvme0n1p2                                                                128M part                                       nvme
+├─nvme0n1p3                                                                768K part                                       nvme
+├─nvme0n1p4                                                               31.6M part                                       nvme
+├─nvme0n1p5                                                                128M part                                       nvme
+├─nvme0n1p6                                                                768K part                                       nvme
+├─nvme0n1p7                                                               31.6M part                                       nvme
+├─nvme0n1p8                                                                100M part                                       nvme
+├─nvme0n1p9                                                                512K part                                       nvme
+├─nvme0n1p10                                                                64M part vfat     /boot/efi                    nvme
+├─nvme0n1p11                                                               100M part                                       nvme
+├─nvme0n1p12                                                               512K part                                       nvme
+├─nvme0n1p13                                                                64M part                                       nvme
+├─nvme0n1p14                                                               400M part                                       nvme
+└─nvme0n1p15                                                             479.5M part                                       nvme

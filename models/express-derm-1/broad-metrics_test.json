@@ -1,0 +1,144 @@
+{
+  "attention_counts": {
+    "high": 768,
+    "inconclusive": 1224,
+    "low": 4546
+  },
+  "calibrated_high_threshold_metrics": {
+    "balanced_accuracy": 0.7986942306520723,
+    "brier_score": 0.015827919891717935,
+    "expected_calibration_error": 0.003233315562795754,
+    "f1_score": 0.18346545866364666,
+    "false_negative": 34,
+    "false_positive": 687,
+    "n": 6538,
+    "negative_predictive_value": 0.994107452339688,
+    "positive_n": 115,
+    "pr_auc": 0.18190207225073196,
+    "precision": 0.10546875,
+    "prevalence": 0.017589476904252065,
+    "roc_auc": 0.8976856270603605,
+    "sensitivity": 0.7043478260869566,
+    "specificity": 0.8930406352171882,
+    "threshold": 0.040662419137630045,
+    "true_negative": 5736,
+    "true_positive": 81
+  },
+  "calibrated_low_threshold_metrics": {
+    "balanced_accuracy": 0.7963507503604573,
+    "brier_score": 0.015827919891717935,
+    "expected_calibration_error": 0.003233315562795754,
+    "f1_score": 0.09682012339819648,
+    "false_negative": 13,
+    "false_positive": 1890,
+    "n": 6538,
+    "negative_predictive_value": 0.9971403431588209,
+    "positive_n": 115,
+    "pr_auc": 0.18190207225073196,
+    "precision": 0.05120481927710843,
+    "prevalence": 0.017589476904252065,
+    "roc_auc": 0.8976856270603605,
+    "sensitivity": 0.8869565217391304,
+    "specificity": 0.7057449789817842,
+    "threshold": 0.012329338820925153,
+    "true_negative": 4533,
+    "true_positive": 102
+  },
+  "calibration_method": "affine_logistic_scaling",
+  "calibration_sha256": "7f3411daa975b0cd36ab171687d466a10e1e9f4c0776085223ffb7ae3acae7db",
+  "checkpoint_sha256": "395ccf58289e7ae95df74462a3bc4dcb8fe882c29da5fc8b536bb14dc18af0cf",
+  "confidence_intervals": {
+    "high_threshold": {
+      "confidence_level": 0.95,
+      "intervals": {
+        "pr_auc": {
+          "high": 0.26815597402522495,
+          "low": 0.1193393809243413
+        },
+        "precision": {
+          "high": 0.12810269694338897,
+          "low": 0.08495960730328939
+        },
+        "roc_auc": {
+          "high": 0.9233298544675168,
+          "low": 0.8654689524475255
+        },
+        "sensitivity": {
+          "high": 0.7862611730932342,
+          "low": 0.6071085164835165
+        },
+        "specificity": {
+          "high": 0.9084264729916597,
+          "low": 0.8766377244921574
+        }
+      },
+      "method": "grouped_stratified_bootstrap",
+      "resampling_unit": "patient",
+      "samples": 2000,
+      "seed": 2026
+    },
+    "low_threshold": {
+      "confidence_level": 0.95,
+      "intervals": {
+        "pr_auc": {
+          "high": 0.26815597402522495,
+          "low": 0.1193393809243413
+        },
+        "precision": {
+          "high": 0.06017101487944668,
+          "low": 0.04299047861932286
+        },
+        "roc_auc": {
+          "high": 0.9233298544675168,
+          "low": 0.8654689524475255
+        },
+        "sensitivity": {
+          "high": 0.942634612821538,
+          "low": 0.8113207547169812
+        },
+        "specificity": {
+          "high": 0.7377463314198277,
+          "low": 0.67334951232611
+        }
+      },
+      "method": "grouped_stratified_bootstrap",
+      "resampling_unit": "patient",
+      "samples": 2000,
+      "seed": 2026
+    }
+  },
+  "decision_policy_version": "binary-extremes-v1",
+  "device": "mps",
+  "evaluation_preprocessing": "opencv_imread_bgr2rgb_inter_area_stretch_imagenet_nchw_float32_v1",
+  "high_threshold": 0.040662419137630045,
+  "logit_bias": -1.4934340434630904,
+  "logit_scale": 0.6600157169084844,
+  "low_threshold": 0.012329338820925153,
+  "manifest_sha256": "0f51f73fee9cb5a64b0992731b5762f05d8b261cab8d788e39494f01ad995b3a",
+  "research_only": true,
+  "schema_version": 2,
+  "selection_split": "validation",
+  "split": "test",
+  "threshold_status": "development_frozen",
+  "thresholds_validated": false,
+  "uncalibrated_metrics": {
+    "balanced_accuracy": 0.6026237231687752,
+    "brier_score": 0.02066335891066831,
+    "expected_calibration_error": 0.019568603339174713,
+    "f1_score": 0.2293577981651376,
+    "false_negative": 90,
+    "false_positive": 78,
+    "n": 6538,
+    "negative_predictive_value": 0.986013986013986,
+    "positive_n": 115,
+    "pr_auc": 0.18190207225073196,
+    "precision": 0.24271844660194175,
+    "prevalence": 0.017589476904252065,
+    "roc_auc": 0.8976856270603605,
+    "sensitivity": 0.21739130434782608,
+    "specificity": 0.9878561419897244,
+    "threshold": 0.5,
+    "true_negative": 6345,
+    "true_positive": 25
+  }
+}

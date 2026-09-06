@@ -1,0 +1,9 @@
+Filesystem      Type      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  ext4      447G   31G  393G   8% /
+tmpfs           tmpfs     3.7G  208K  3.7G   1% /dev/shm
+tmpfs           tmpfs     1.5G  2.9M  1.5G   1% /run
+tmpfs           tmpfs     5.0M   12K  5.0M   1% /run/lock
+efivarfs        efivarfs  256K   76K  181K  30% /sys/firmware/efi/efivars
+/dev/nvme0n1p10 vfat       63M  114K   63M   1% /boot/efi
+tmpfs           tmpfs     749M  164K  749M   1% /run/user/1001
+/dev/mmcblk0p1  ext4      234G   36K  222G   1% /mnt/express-uhs

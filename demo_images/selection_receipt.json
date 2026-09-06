@@ -1,0 +1,83 @@
+{
+  "created_date": "2026-08-23",
+  "decision_policy": {
+    "high_threshold": 0.03316448301885451,
+    "low_threshold": 0.010975708227031896,
+    "version": "binary-extremes-v1"
+  },
+  "fixture_transform": {
+    "crop": false,
+    "implementation": "opencv-4.14.0",
+    "jpeg_quality": 95,
+    "max_dimension": 1024,
+    "preserve_aspect_ratio": true
+  },
+  "integrity": {
+    "image_count": 30,
+    "manifest_sha256": "b87f055a4fa99c266d752aac5e267592e8f26a0d13ff6f53e3b4bcf0126879a0",
+    "original_demo_overlap_count": 0,
+    "training_overlap_count": 0,
+    "unique_lesion_count": 30,
+    "unique_patient_count": 30
+  },
+  "model": {
+    "domain_status": "microscope_validation_pending",
+    "manifest_sha256": "849be8e39311eb52d2fba8ce61b0996833ad1d6bcad4aadb6d6580d1acc1e382",
+    "name": "express-derm",
+    "onnx_sha256": "f47087ac224641740f7af18b4d112b460d7905cd37dc90f0b9fce707a5a106be",
+    "release": "express-derm-v0.3.1",
+    "source_version": "ed-isic-kd-efficientnet-b0-research-v0.3.0",
+    "thresholds_validated": false,
+    "validation_status": "research_only"
+  },
+  "not_for": [
+    "accuracy measurement",
+    "model validation",
+    "clinical validation",
+    "diagnosis"
+  ],
+  "package": "express_derm_challenge_30",
+  "purpose": "output-aware challenge demonstration fixtures",
+  "quality_thresholds": {
+    "focus": 80.0,
+    "max_bright_fraction": 0.15,
+    "max_brightness": 220.0,
+    "max_dark_fraction": 0.25,
+    "min_brightness": 45.0
+  },
+  "schema_version": 1,
+  "selected_counts": {
+    "high": 10,
+    "inconclusive_benign": 5,
+    "inconclusive_melanoma": 5,
+    "low": 10
+  },
+  "selection_disclosure": "Images were deliberately selected using Express-Derm outputs so the three UI states are represented. Results on this package are not an unbiased performance estimate.",
+  "selection_pool": {
+    "excluded_current_training_manifest_sha256": "2f2234b94bb32eaec75dab36532f57adf00928f07b6b543bce5070e224acddd8",
+    "excluded_original_demo_manifest_sha256": "238cc0027dbf45d99827a4ec53075c6d1f513df4c87ac2b71cc887e541ca4811",
+    "quality_accepted_external_candidates": 648,
+    "source_provenance": {
+      "isic-histopath-mel-nevus": {
+        "collection_url": "https://api.isic-archive.com/collections/294/",
+        "manifest_path": "ml/data/isic-histopath-mel-nevus.nosync/artifacts/patient_safe_histopath_subset.csv",
+        "manifest_sha256": "52450773327ad180452607601ae8143da6ea55db58877f202e4c3658a927caaf",
+        "receipt_path": "ml/data/isic-histopath-mel-nevus.nosync/artifacts/patient_safe_histopath_subset.receipt.json",
+        "receipt_sha256": "3b8fe4e3a9925d4a7b4369993268c2cb0d59b73c4d7ed53ac3651384a230dd38"
+      },
+      "isic-msk1-benign-controls": {
+        "collection_url": "https://api.isic-archive.com/collections/289/",
+        "manifest_path": "ml/data/isic-msk1.nosync/artifacts/patient_safe_benign_controls.csv",
+        "manifest_sha256": "1a3b1125ae106b05d63fb2b62256876b208c18b722335f73e2e1808e75284ba8",
+        "receipt_path": "ml/data/isic-msk1.nosync/artifacts/patient_safe_benign_controls.receipt.json",
+        "receipt_sha256": "fcd5e156f92509065cb38394bc358920b753348100fe3e956b7de9d672c04605"
+      }
+    },
+    "stable_candidate_counts": {
+      "high": 100,
+      "inconclusive_benign": 123,
+      "inconclusive_melanoma": 22,
+      "low": 33
+    }
+  }
+}

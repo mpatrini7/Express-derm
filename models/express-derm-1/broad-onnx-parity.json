@@ -1,0 +1,19 @@
+{
+  "absolute_tolerance": 0.0001,
+  "candidate_backend": "onnxruntime_cpu",
+  "checkpoint_sha256": "395ccf58289e7ae95df74462a3bc4dcb8fe882c29da5fc8b536bb14dc18af0cf",
+  "dataset_manifest_sha256": "0f51f73fee9cb5a64b0992731b5762f05d8b261cab8d788e39494f01ad995b3a",
+  "inference_enabled": false,
+  "maximum_absolute_error": 6.198883056640625e-06,
+  "mean_absolute_error": 1.8655555322766304e-06,
+  "model_sha256": "abc037a089b38ed01bd6823b9ad20cbf53a24d7c410954efc271f354c03c5ff2",
+  "model_version": "express-derm-broad-1",
+  "passed": true,
+  "preprocessing": "opencv_imread_bgr2rgb_inter_area_stretch_imagenet_nchw_float32_v1",
+  "reference_backend": "pytorch_cpu",
+  "reference_predictions_sha256": "8077e19b33783ea1607abd4986bb5f83bb94b5454d4c8e704147ced3930c9287",
+  "research_only": true,
+  "sample_size": 128,
+  "schema_version": 1,
+  "selection": "evenly_spaced_test_records"
+}

@@ -1,0 +1,24 @@
+2026-09-05T16:06:31Z	Preparing 8 GiB fio test file
+2026-09-05T16:08:44Z	Sequential read run 1 of 5
+2026-09-05T16:09:45Z	4 KiB random read run 1 of 5
+2026-09-05T16:10:46Z	Model cold-load run 1 of 5
+2026-09-05T16:10:47Z	Image ingest run 1 of 5
+2026-09-05T16:10:58Z	Sequential read run 2 of 5
+2026-09-05T16:11:58Z	4 KiB random read run 2 of 5
+2026-09-05T16:12:59Z	Model cold-load run 2 of 5
+2026-09-05T16:13:00Z	Image ingest run 2 of 5
+2026-09-05T16:13:11Z	Sequential read run 3 of 5
+2026-09-05T16:14:12Z	4 KiB random read run 3 of 5
+2026-09-05T16:15:12Z	Model cold-load run 3 of 5
+2026-09-05T16:15:14Z	Image ingest run 3 of 5
+2026-09-05T16:15:24Z	Sequential read run 4 of 5
+2026-09-05T16:16:25Z	4 KiB random read run 4 of 5
+2026-09-05T16:17:26Z	Model cold-load run 4 of 5
+2026-09-05T16:17:27Z	Image ingest run 4 of 5
+2026-09-05T16:17:37Z	Sequential read run 5 of 5
+2026-09-05T16:18:38Z	4 KiB random read run 5 of 5
+2026-09-05T16:19:39Z	Model cold-load run 5 of 5
+2026-09-05T16:19:40Z	Image ingest run 5 of 5
+2026-09-05T16:19:51Z	Concurrent ingest, inference and review replay
+2026-09-05T16:21:52Z	Sustained replay for 1800 seconds
+2026-09-05T16:51:54Z	Benchmark measurements complete

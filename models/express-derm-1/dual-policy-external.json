@@ -1,0 +1,46 @@
+{
+  "attention_counts": {
+    "high_confirmed": 975,
+    "no_elevated_signal": 31,
+    "review": 4225
+  },
+  "broad_predictions_sha256": "881361e94857fa2f65bf08f7ed8a2e0f0b5aa93184589ca66100cb633bad8a90",
+  "broad_report_sha256": "b977e5baf70ad20c6ec8416e2bbdb94bb3c7e3c1f2cea5178bd2fe2a6f340d1d",
+  "config_sha256": "18f11cd5a2247c0be22a7f98f8746dd5591873d3737c2031abf7e119d89941c1",
+  "confirmation_selection": {
+    "false_positive": 64,
+    "negative_records": 6415,
+    "positive_records": 117,
+    "precision": 0.2,
+    "records": 6532,
+    "sensitivity": 0.13675213675213677,
+    "specificity": 0.9900233826968043,
+    "split": "validation",
+    "target_specificity": 0.99,
+    "true_positive": 16
+  },
+  "high_confirmation_metrics": {
+    "false_negative": 2861,
+    "false_positive": 82,
+    "n": 5231,
+    "positive_n": 3754,
+    "precision": 0.9158974358974359,
+    "sensitivity": 0.23787959509856155,
+    "specificity": 0.9444820582261341,
+    "true_negative": 1395,
+    "true_positive": 893
+  },
+  "melanoma_predictions_sha256": "af461a416c8cbdf3ed0018c08430d2e9f43c72da45078ba4d23a237d13c0ab8d",
+  "melanoma_report_sha256": "3b25403b37ccca7d8b5c9b15bf790143ef5348ce78545e099673e0fbaf6df1a8",
+  "microscope_validation_pending": true,
+  "policy_version": "dual-center-scale-confirmation-v1",
+  "records": 5231,
+  "research_only": true,
+  "schema_version": 1,
+  "thresholds_validated": false,
+  "view_names": [
+    "original",
+    "center_crop_90",
+    "center_crop_80"
+  ]
+}

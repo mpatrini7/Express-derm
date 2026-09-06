@@ -1,0 +1,3 @@
+Node                  Generic               SN                   Model                                    Namespace  Usage                      Format           FW Rev  
+--------------------- --------------------- -------------------- ---------------------------------------- ---------- -------------------------- ---------------- --------
+/dev/nvme0n1          /dev/ng0n1            [redacted]           ST51271_WDC SanDisk SD Express SDSQXFN   0x1        489.75  GB / 489.75  GB    512   B +  0 B   RO180S2P

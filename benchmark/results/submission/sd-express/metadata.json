@@ -1,0 +1,20 @@
+{
+  "cache_preparation": "sync plus Linux drop_caches=3 before cold workloads",
+  "fio_seconds": 60,
+  "fio_size_gib": 8,
+  "hostname": "orin-nano",
+  "image_count": 1000,
+  "image_dir": "/home/mike/Desktop/Express-derm/demo_images",
+  "label": "sd-express",
+  "model_dir": "/home/mike/Desktop/Express-derm/models/express-derm-1",
+  "notes": "SD Express 512 GB; ext4; hosts Jetson operating system",
+  "platform": "Linux-6.8.12-1021-tegra-aarch64-with-glibc2.39",
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "replay_seconds": 120,
+  "runs": 5,
+  "schema_version": 1,
+  "started_at": "2026-09-05T16:56:38Z",
+  "sustained_seconds": 1800,
+  "target_dir": "/home/mike/express-derm-benchmark",
+  "target_mount": "/dev/nvme0n1p1 /      ext4   rw,relatime"
+}

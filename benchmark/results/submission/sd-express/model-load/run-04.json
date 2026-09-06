@@ -1,0 +1,46 @@
+{
+  "elapsed_seconds": 0.47580464800012123,
+  "error": null,
+  "model_count": 2,
+  "models": [
+    {
+      "bytes": 16030958,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "path": "/home/mike/express-derm-benchmark/session-sd-express-20260905T165638Z/model-package/model-broad.onnx",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    },
+    {
+      "bytes": 16030958,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": [
+            1,
+            3,
+            224,
+            224
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "path": "/home/mike/express-derm-benchmark/session-sd-express-20260905T165638Z/model-package/model.onnx",
+      "providers": [
+        "CPUExecutionProvider"
+      ]
+    }
+  ],
+  "status": "ok"
+}

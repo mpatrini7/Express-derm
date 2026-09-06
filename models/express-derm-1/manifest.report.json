@@ -1,0 +1,39 @@
+{
+  "additional_assignment": "train_only",
+  "additional_manifest_sha256": "b4e77619cc14fa305ee31bf591e15b466a112bb59e0081c3a688431f93404f7a",
+  "group_leakage_records": 0,
+  "hash_leakage_records": 0,
+  "near_duplicate_hamming_threshold": 16,
+  "near_duplicate_pairs": 1,
+  "near_duplicate_split_leakage_records": 0,
+  "research_only": true,
+  "schema_version": 2,
+  "source_manifest_sha256": "2df62eb9266f83d1d57fa4c8b8d9710d9d5abef73bfffcd79b0fd9d730caa860",
+  "split_manifest_sha256": "ec1de81526be5254e11c7e292eb6ae65ad8ce4c5d65174a14dee1aa3673d074f",
+  "splits": {
+    "test": {
+      "groups": 414,
+      "images": 6538,
+      "target_counts": {
+        "0": 6423,
+        "1": 115
+      }
+    },
+    "train": {
+      "groups": 1604,
+      "images": 20040,
+      "target_counts": {
+        "0": 19614,
+        "1": 426
+      }
+    },
+    "validation": {
+      "groups": 407,
+      "images": 6532,
+      "target_counts": {
+        "0": 6415,
+        "1": 117
+      }
+    }
+  }
+}

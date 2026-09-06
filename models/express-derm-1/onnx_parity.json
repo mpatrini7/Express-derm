@@ -1,0 +1,19 @@
+{
+  "absolute_tolerance": 0.0001,
+  "candidate_backend": "onnxruntime_cpu",
+  "checkpoint_sha256": "3ce3f49ff1f3c8bf25c1f2f40d3e3820f353fbe2055f136cfe851adb571d26e9",
+  "dataset_manifest_sha256": "ec1de81526be5254e11c7e292eb6ae65ad8ce4c5d65174a14dee1aa3673d074f",
+  "inference_enabled": false,
+  "maximum_absolute_error": 2.862885594367981e-06,
+  "mean_absolute_error": 5.491019692271948e-07,
+  "model_sha256": "f47087ac224641740f7af18b4d112b460d7905cd37dc90f0b9fce707a5a106be",
+  "model_release": "express-derm-v0.3.0",
+  "model_version": "express-derm-1",
+  "passed": true,
+  "reference_backend": "pytorch_cpu",
+  "reference_predictions_sha256": "028758620cd7734bab925298a152f69cf9c0b8d1c91ac73ca5633e95aa3978b0",
+  "research_only": true,
+  "sample_size": 128,
+  "schema_version": 1,
+  "selection": "evenly_spaced_test_records"
+}

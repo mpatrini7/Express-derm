@@ -1,0 +1,170 @@
+{
+  "abstention_margin": 0.0,
+  "architecture": "efficientnet_b0",
+  "calibration_method": "affine_logistic_scaling",
+  "calibration_sha256": "f28985fbab2b01c6dc075484f55d319d636c6b4f62546df871bfc0444d7e3e2d",
+  "checkpoint_sha256": "3ce3f49ff1f3c8bf25c1f2f40d3e3820f353fbe2055f136cfe851adb571d26e9",
+  "dataset_manifest_sha256": "ec1de81526be5254e11c7e292eb6ae65ad8ce4c5d65174a14dee1aa3673d074f",
+  "development_thresholds_frozen": true,
+  "domain_status": "microscope_validation_pending",
+  "external_runtime_models": [],
+  "high_threshold": 0.03316448301885451,
+  "image_size": 224,
+  "input_name": "image",
+  "logit_bias": -3.444357903322325,
+  "logit_scale": 1.845289759243332,
+  "low_threshold": 0.010975708227031896,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "model_sha256": "f47087ac224641740f7af18b4d112b460d7905cd37dc90f0b9fce707a5a106be",
+  "bundle_sha256": "f6a516b94d98783878378fe5d3be6c0afc4d493317a14b42f0e2fa862988afcc",
+  "decision_policy": {
+    "broad_confirmation_threshold": 0.16130259320274545,
+    "combined_outputs": {
+      "high": "high_confirmed",
+      "low": "no_elevated_signal",
+      "uncertain": "review"
+    },
+    "evidence": [
+      {
+        "filename": "dual-policy.yaml",
+        "role": "frozen_policy_config",
+        "sha256": "18f11cd5a2247c0be22a7f98f8746dd5591873d3737c2031abf7e119d89941c1"
+      },
+      {
+        "filename": "dual-policy-internal.json",
+        "role": "internal_test_report",
+        "sha256": "0ba2fa0f9adcf772b45794654dd6129dad928a73c16449192d5ca0b78d2314c0"
+      },
+      {
+        "filename": "dual-policy-external.json",
+        "role": "decontaminated_external_report",
+        "sha256": "2d770ea927534b12d4d6e7643485f517b97e0490e6b042e4baf375144f632ec2"
+      }
+    ],
+    "confirmation_rule": "all_three_views_high_for_melanoma_and_at_or_above_strict_threshold_for_broad",
+    "low_rule": "all_three_views_low_for_both_models",
+    "selection_evidence": {
+      "false_positive": 64,
+      "negative_records": 6415,
+      "positive_records": 117,
+      "precision": 0.2,
+      "selection_split": "validation",
+      "sensitivity": 0.13675213675213677,
+      "specificity": 0.9900233826968043,
+      "target_specificity": 0.99,
+      "true_positive": 16
+    },
+    "version": "dual-center-scale-confirmation-v1",
+    "view_names": [
+      "original",
+      "center_crop_90",
+      "center_crop_80"
+    ],
+    "view_protocol": "center_scale3_consensus_v1"
+  },
+  "models": [
+    {
+      "architecture": "efficientnet_b0",
+      "calibration_method": "affine_logistic_scaling",
+      "calibration_sha256": "f28985fbab2b01c6dc075484f55d319d636c6b4f62546df871bfc0444d7e3e2d",
+      "checkpoint_sha256": "3ce3f49ff1f3c8bf25c1f2f40d3e3820f353fbe2055f136cfe851adb571d26e9",
+      "dataset_manifest_sha256": "ec1de81526be5254e11c7e292eb6ae65ad8ce4c5d65174a14dee1aa3673d074f",
+      "filename": "model.onnx",
+      "high_threshold": 0.03316448301885451,
+      "image_size": 224,
+      "input_name": "image",
+      "logit_bias": -3.444357903322325,
+      "logit_scale": 1.845289759243332,
+      "low_threshold": 0.010975708227031896,
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225],
+      "model_sha256": "f47087ac224641740f7af18b4d112b460d7905cd37dc90f0b9fce707a5a106be",
+      "output_name": "logit",
+      "preprocessing": {
+        "color_conversion": "bgr_to_rgb",
+        "decoder": "opencv_imread_color",
+        "dtype": "float32",
+        "layout": "nchw",
+        "pixel_scale": "uint8_div_255",
+        "resize_geometry": "stretch_square",
+        "resize_interpolation": "area",
+        "version": "opencv_imread_bgr2rgb_inter_area_stretch_imagenet_nchw_float32_v1"
+      },
+      "release_version": "express-derm-v0.3.1",
+      "role": "melanoma_attention",
+      "target": "melanoma_attention",
+      "thresholds_validated": false,
+      "version": "express-derm-1-melanoma"
+    },
+    {
+      "architecture": "efficientnet_b0",
+      "calibration_method": "affine_logistic_scaling",
+      "calibration_sha256": "7f3411daa975b0cd36ab171687d466a10e1e9f4c0776085223ffb7ae3acae7db",
+      "checkpoint_sha256": "395ccf58289e7ae95df74462a3bc4dcb8fe882c29da5fc8b536bb14dc18af0cf",
+      "dataset_manifest_sha256": "0f51f73fee9cb5a64b0992731b5762f05d8b261cab8d788e39494f01ad995b3a",
+      "filename": "model-broad.onnx",
+      "high_threshold": 0.040662419137630045,
+      "image_size": 224,
+      "input_name": "image",
+      "logit_bias": -1.4934340434630904,
+      "logit_scale": 0.6600157169084844,
+      "low_threshold": 0.012329338820925153,
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225],
+      "model_sha256": "abc037a089b38ed01bd6823b9ad20cbf53a24d7c410954efc271f354c03c5ff2",
+      "output_name": "logit",
+      "preprocessing": {
+        "color_conversion": "bgr_to_rgb",
+        "decoder": "opencv_imread_color",
+        "dtype": "float32",
+        "layout": "nchw",
+        "pixel_scale": "uint8_div_255",
+        "resize_geometry": "stretch_square",
+        "resize_interpolation": "area",
+        "version": "opencv_imread_bgr2rgb_inter_area_stretch_imagenet_nchw_float32_v1"
+      },
+      "release_version": "express-derm-broad-v0.1.0",
+      "role": "broad_malignancy_attention",
+      "target": "bcc_scc_ak_melanoma_attention",
+      "thresholds_validated": false,
+      "version": "express-derm-broad-1"
+    }
+  ],
+  "model_family": "express-derm",
+  "output_name": "logit",
+  "preprocessing": {
+    "color_conversion": "bgr_to_rgb",
+    "decoder": "opencv_imread_color",
+    "dtype": "float32",
+    "layout": "nchw",
+    "pixel_scale": "uint8_div_255",
+    "resize_geometry": "stretch_square",
+    "resize_interpolation": "area",
+    "version": "opencv_imread_bgr2rgb_inter_area_stretch_imagenet_nchw_float32_v1"
+  },
+  "release_version": "express-derm-v0.4.0-dual",
+  "research_only": true,
+  "runtime_identity": "express-derm-dual",
+  "runtime_model_count": 2,
+  "schema_version": 4,
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "threshold_status": "development_frozen",
+  "thresholds_validated": false,
+  "training_provenance": {
+    "candidate_type": "distilled_student",
+    "initial_checkpoint_sha256": "0abb5ecb97f6e8268d63c33d5ad7cb060abcca6caa19d3a51dad37004f2e0cc0",
+    "teacher_ensemble_component_set_sha256": "9e2fcef642956ad3a975a00189d4ddf58bdb4dd0d3202a534c32777a5f7c1d62",
+    "teacher_ensemble_json_sha256": "8958cc288b9358cd87560b96133d041a584072729ac3a5b60d8de4310f05294d",
+    "teacher_targets_sha256": "57f84770e6104eee7c798ef985c30251bdfc23e3a204fec14a4279096c14887f"
+  },
+  "validation_status": "research_only",
+  "version": "express-derm-1"
+}

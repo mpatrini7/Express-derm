@@ -1,0 +1,7 @@
+date_utc=2026-09-05T16:56:38Z
+label=sd-express
+target_mount=/dev/nvme0n1p1 /      ext4   rw,relatime
+fio_version=fio-3.36
+python_version=Python 3.12.3
+kernel=Linux orin-nano 6.8.12-1021-tegra #1 SMP PREEMPT Thu Aug  6 21:56:04 PDT 2026 aarch64 aarch64 aarch64 GNU/Linux
+quick=false

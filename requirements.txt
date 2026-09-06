@@ -1,0 +1,3 @@
+# Complete Python environment for the application, tests, and ONNX runtime.
+-r backend/requirements-dev.txt
+-r backend/requirements-ai.txt

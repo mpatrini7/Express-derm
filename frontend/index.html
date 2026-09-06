@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Express-Derm local research prototype"
+    />
+    <title>Express-Derm</title>
+  </head>
+  <body>
+    <div id="root">
+      <main class="app-boot-fallback" aria-live="polite">
+        <p class="eyebrow">Local workspace</p>
+        <h1>Express-Derm</h1>
+        <p>Loading local patient records...</p>
+      </main>
+    </div>
+    <script>
+      (() => {
+        const showBootError = (message) => {
+          const root = document.getElementById("root");
+          if (!root || root.dataset.bootFailed) return;
+          root.dataset.bootFailed = "true";
+          root.replaceChildren();
+          const main = document.createElement("main");
+          main.className = "app-boot-error";
+          main.setAttribute("role", "alert");
+          const eyebrow = document.createElement("p");
+          eyebrow.className = "eyebrow";
+          eyebrow.textContent = "Local app error";
+          const heading = document.createElement("h1");
+          heading.textContent = "Express-Derm";
+          const text = document.createElement("p");
+          text.textContent = "The interface could not start.";
+          const detail = document.createElement("pre");
+          detail.textContent = message;
+          main.append(eyebrow, heading, text, detail);
+          root.append(main);
+        };
+
+        window.addEventListener("error", (event) => {
+          const source = event.filename ? ` (${event.filename})` : "";
+          showBootError(`${event.message || "JavaScript module failed to load"}${source}`);
+        });
+        window.addEventListener("unhandledrejection", (event) => {
+          showBootError(
+            event.reason instanceof Error
+              ? event.reason.message
+              : String(event.reason),
+          );
+        });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
